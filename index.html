@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="hamburger" onclick="ham()">
+            <div class="ham" id="hamburg"> <i class="fa-solid fa-bars"></i></div>
+            <div class="xmark" id="cross"> <i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="logo">Logo</div>
+        <nav id="nav-bar">
+            <div class="header-list"><a href="">Home </a>
+                <div class="header_under"></div>
+            </div>
+            <div class="header-list"><a href="#about">About</a>
+                <div class="header_under"></div>
+            </div>
+            <div class="header-list"><a href="#skills">Skills</a>
+                <div class="header_under"></div>
+            </div>
+            <div class="header-list"><a href="#project">Projects</a>
+                <div class="header_under"></div>
+            </div>
+            <div class="header-list"><a href="">Contact</a>
+                <div class="header_under"></div>
+            </div>
+        </nav>
+        <div class="dark-mode-icon" onclick="dark()">
+            <!-- <input type="checkbox" name="" id="check" class="checkbox"> -->
+            <div id="moon"><i class="fa-solid fa-moon"></i></div>
+            <div id="sun" class="sun"><i class="fa-solid fa-sun"></i></div>
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <section class="hero">
+
+        <div class="hero-left">
+            <div>
+                <h1>Hi! I am</h1>
+                <p class="typewriter"><span id="element"></span></p>
+            </div>
+            <p>Highly motivated and passionate Frontend Web Developer seeking an opportunity to apply my skills in HTML,
+                CSS, and JavaScript to develop engaging and user-friendly web applications. Committed to continuous
+                learning and staying up-to-date with the latest web development trends and technologies. I am proficient
+                in building responsive and interactive web applications.</p>
+            <div class="CV-main">
+                <a href="" class="CV">Download CV <i class="fa-solid fa-angles-right"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="assets/code-snapshot.png" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- About Us Section -->
+
+    <section class="about" id="about">
+        <div class="about-head">
+            <p>About Me</p>
+            <div class="about-head-underline"></div>
+        </div>
+        <div class="about-detail">
+            <img src="./assets/code-snapshot.png" alt="">
+            <div class="about-right">
+
+                <p class="about-right-top">My name is Akash Kumar Singh, and I am a frontend web developer with a strong
+                    passion for creating
+                    intuitive
+                    and aesthetically pleasing websites. With a keen eye for
+                    detail and a dedication to staying up-to-date with the latest industry trends, I constantly seek to
+                    enhance my skills and expand my knowledge base.</p>
+                <p class="about-right-bottom">As a frontend web developer, my primary focus is on translating design
+                    mockups and wireframes into
+                    fully
+                    functional websites. I have extensive experience in HTML, CSS, and JavaScript, and I'm well-versed
+                    in
+                    various frontend frameworks and libraries such as React. I understand the
+                    importance of responsive web design and ensure that all my projects are optimized for seamless
+                    performance across different devices and browsers.
+
+                </p>
+                <div class="social">
+                    <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div> <a target="_blank" href="https://www.linkedin.com/in/itsakash18/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div> <a href=""><i class="fa-brands fa-twitter"></i></a></div>
+                    <div> <a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div> <a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <div class="about-head skills-head">
+            <p>My Skills</p>
+            <div class="about-head-underline"></div>
+        </div>
+
+        <div class="skills-detail">
+            <div class="skills-sec JavaScript">
+                <img src="./assets/code-snapshot.png" alt="">
+                <p>HTML</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aut quas facilis labore autem
+                    eveniet?</p>
+            </div>
+
+            <div class="skills-sec ReactJS">
+                <img src="./assets/code-snapshot.png" alt="">
+                <p>HTML</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aut quas facilis labore autem
+                    eveniet?</p>
+            </div>
+            <div class="skills-sec responsive">
+                <img src="./assets/code-snapshot.png" alt="">
+                <p>HTML</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aut quas facilis labore autem
+                    eveniet?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="skills project" id="project">
+        <div class="about-head skills-head">
+            <p>My Projects</p>
+            <div class="about-head-underline"></div>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="https://webakash1806.github.io/weather-webakash/" class="live"><i
+                            class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./assets/Learning mongoDB (2).png" alt="">
+                <p class="pro-name">Weather App</p>
+                <p class="pro-det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis delectus cumque
+                    veniam, repudiandae sint.</p>
+                <div class="proj-btn">
+                    <div class="social">
+                        <div> <a target="_blank" href="https://github.com/webakash1806"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="" class="live"><i class="fa-solid fa-circle fa-beat-fade" style="color: #ff0000;"></i>
+                        Live</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- <Introduction>
+
+      <Name> Akash Kumar Singh </Name>
+      <D-O-B> 18 Dec 2004 </D-O-B>
+      <Email> itsakash18.06@gmail.com </Email>
+
+      <Location>
+          <p> 02, Patanawa Kala </p>
+          <District> Rohtas </District>
+          <State> Bihar </State>
+          <Nationality> India </Nationality>
+      </Location>
+
+</Introduction> -->
+
+
+    <!-- Script Section -->
+
+
+    <!-- TypeTheme CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- TypeTheme Script code -->
+    <script>var typed = new Typed('#element', {
+            strings: ['Akash Kumar Singh', 'Web Developer', 'Web Designer'],
+            loop: true,
+            startDelay: 100,
+            typeSpeed: 60,
+            backDelay: 1000,
+            backSpeed: 50
+        });
+    </script>
+
+
+    <!-- Owl Crousel CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS link -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
