@@ -332,8 +332,7 @@ nav {
 }
 
 .skills-detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     place-items: center;
     max-width: 70rem;
     gap: 25px;
@@ -478,6 +477,23 @@ nav {
 
     .nav-active {
         left: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 10rem 0 0 0;
+    }
+
+    .about-detail {
+        flex-direction: column;
+    }
+
+    .skills-detail {
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 0.5rem;
     }
 
 }
