@@ -8,6 +8,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     background-color: var(--secondary);
+    color: var(--primary);
 }
 
 a {
@@ -16,25 +17,64 @@ a {
 }
 
 :root {
-    --darkGreen: #059646;
-    --green: #0cc761;
-    --lightSky: #c9eff4;
+    --grey: #f5f5f5be;
+    --hover: #8007d6;
     --dark: #0b0116;
     --darkSky: #02fbd1;
-    --purple: #970bfd;
     --secondary: #ffffff;
+    --primary: #000;
 }
 
 :root .dark-mode {
-    --darkGreen: #059646;
+    --grey: #222222;
     --green: #0cc761;
-    --lightSky: #c9eff4;
     --dark: #0b0116;
-    --darkSky: #02fbd1;
-    --purple: #970bfd;
+    --hover: #dd40fd;
     --secondary: #000;
-
+    --primary: #fff;
 }
+
+.dark-mode body {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.dark-mode header {
+    background-color: #1B1B1B;
+}
+
+.dark-mode .hero {
+    background: linear-gradient(#34343499, #48484843, #2b2a2a1b, #1e1e1e11);
+}
+
+.dark-mode .skills {
+    background: linear-gradient(#1e1e1e11, #2b2a2a1b, #34343460, #48484821);
+    box-shadow: 0px 10px 15px #2b2a2a1f;
+}
+
+.dark-mode .header-list a {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.dark-mode .typewriter {
+    background: linear-gradient(to right, #aa36fd, #ff00e1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.dark-mode .skills-sec:hover,
+.dark-mode .item:hover {
+    box-shadow: 0px 5px 8px #aa36fd, 0px 0px 2px #ff00e1;
+}
+
+.dark-mode .skills-sec,
+.dark-mode .item {
+    box-shadow: 0px 0px 5px #cf36fd;
+}
+
+
+
 
 header {
     background: #E7FEF3;
@@ -48,6 +88,7 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
+    color: var(--primary);
 }
 
 .hamburger {
@@ -57,7 +98,7 @@ header {
 .hamburger div i {
     left: 22px;
     z-index: 5;
-    color: #0BBC5D;
+    color: var(--primary);
     position: absolute;
     top: 17.8px;
     font-size: 27px;
@@ -65,9 +106,14 @@ header {
     /* background-color: #fff; */
 }
 
+.hamburger div i:hover {
+    color: var(--hover);
+}
+
 
 nav {
     display: flex;
+
 }
 
 
@@ -79,15 +125,16 @@ nav {
 }
 
 .header-list:hover a {
-    color: var(--darkGreen);
+    color: var(--hover);
 }
 
 .header-list a {
+    color: var(--primary);
     margin: 0 12px;
     padding: 4px 10px;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 
@@ -100,7 +147,7 @@ nav {
 }
 
 .header-list:hover .header_under {
-    background-color: var(--darkGreen);
+    background-color: var(--hover);
     width: 65px;
     height: 2.5px;
 }
@@ -113,6 +160,10 @@ nav {
     top: 19px;
     right: 22px;
     font-size: 25px;
+}
+
+.dark-mode-icon div i:hover {
+    color: var(--hover);
 }
 
 
@@ -135,8 +186,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 35rem;
-    padding: 6rem 0 4rem 0;
+    height: 40rem;
+    color: var(--primary);
 }
 
 .hero-left {
@@ -169,7 +220,7 @@ nav {
     background: linear-gradient(to right, #6b19ae, #aa0297);
     width: 9rem;
     padding: 8px 55px 8px 15px;
-    color: var(--secondary);
+    color: #fff;
     font-weight: 600;
     font-size: 19px;
     letter-spacing: 0.6px;
@@ -183,7 +234,7 @@ nav {
 }
 
 .CV-main a:hover {
-    box-shadow: 5px 5px 15px var(--lightSky);
+    box-shadow: 5px 5px 15px #b9b9b96e;
 }
 
 .CV-main a:hover i {
@@ -346,13 +397,20 @@ nav {
     align-items: center;
     max-width: 17rem;
     gap: 1rem;
-    background-color: var(--white);
+    background-color: var(--grey);
     padding: 15px;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0px 0px 5px #44434373;
     transition: all 0.3s;
     cursor: pointer;
+}
+
+.skills-sec p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--hover);
 }
 
 .skills-sec:hover {
@@ -373,6 +431,7 @@ nav {
 
 .item {
     border-radius: 7px;
+    background-color: var(--grey);
     box-shadow: 0px 0px 5px #44434373;
     transition: all 0.3s;
     /* border: 1px solid black; */
@@ -415,7 +474,7 @@ nav {
     align-items: center;
     gap: 12px;
     background-color: var(--dark);
-    color: var(--white);
+    color: #fff;
     padding: 3px 15px;
     border-radius: 50px;
     font-size: 17px;
@@ -430,17 +489,20 @@ nav {
 }
 
 .pro-name {
-    color: var(--darkGreen);
+    color: var(--hover);
     padding: 7px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .pro-det {
     padding: 0 7px;
-    color: var(--dark);
+    color: var(--primary);
     font-size: 14px;
+    text-align: center;
+
 }
 
 @media screen and (max-width: 425px) {
@@ -467,15 +529,16 @@ nav {
     }
 
     nav {
-        padding: 15px 35px;
+        padding: 30px 40px;
         gap: 10px;
         display: flex;
         flex-direction: column;
         position: absolute;
         left: -300px;
         top: 4rem;
-        background-color: #E9FEF5;
-        box-shadow: 0px 5px 10px #808080;
+        background-color: var(--secondary);
+        color: var(--primary);
+        box-shadow: 0 0px 10px #cf36fd;
         border-radius: 5px;
         transition: all 0.5s;
     }
@@ -496,7 +559,7 @@ nav {
 
     .hero {
         flex-direction: column;
-        padding: 5rem 0.3rem;
+        padding: 2.5rem 0.3rem;
 
     }
 
@@ -588,15 +651,16 @@ nav {
     }
 
     nav {
-        padding: 15px 35px;
+        padding: 30px 40px;
         gap: 10px;
         display: flex;
         flex-direction: column;
         position: absolute;
         left: -300px;
         top: 4rem;
-        background-color: #E9FEF5;
-        box-shadow: 0px 5px 10px #808080;
+        background-color: var(--secondary);
+        color: var(--primary);
+        box-shadow: 0 0px 10px #cf36fd;
         border-radius: 5px;
         transition: all 0.5s;
     }
