@@ -496,12 +496,12 @@ nav {
 
     .hero {
         flex-direction: column;
-        padding: 7rem 1rem;
+        padding: 5rem 1rem;
 
     }
 
     .typewriter {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         letter-spacing: 0.2px;
         font-weight: 600;
     }
@@ -513,7 +513,7 @@ nav {
 
     .hero-left h1 {
         font-weight: 600;
-        font-size: 3.3rem;
+        font-size: 3rem;
         margin-bottom: -6px;
     }
 
@@ -530,13 +530,13 @@ nav {
     }
 
     .hero img {
-        margin-top: 3rem;
-        height: 18rem;
+        margin-top: 1rem;
+        height: 17rem;
     }
 
     .about img {
         margin-top: -2.5rem;
-        height: 18rem;
+        height: 17rem;
     }
 
     .skills-detail {
