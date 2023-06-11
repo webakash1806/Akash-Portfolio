@@ -496,7 +496,7 @@ nav {
 
     .hero {
         flex-direction: column;
-        padding: 5rem 1rem;
+        padding: 5rem 0.3rem;
 
     }
 
@@ -526,17 +526,22 @@ nav {
     }
 
     .about-right {
+
         min-width: 13rem;
+    }
+
+    .social {
+        gap: 20px;
     }
 
     .hero img {
         margin-top: 1rem;
-        height: 17rem;
+        height: 15rem;
     }
 
     .about img {
         margin-top: -2.5rem;
-        height: 17rem;
+        height: 15rem;
     }
 
     .skills-detail {
