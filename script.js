@@ -25,11 +25,11 @@ function dark() {
 $('.owl-carousel').owlCarousel({
     autoplayHoverPause: true,
     loop: true,
-    margin: 10,
+
     autoplay: true,
     autoplayTimeout: 2000,
-    stagePadding: 30,
-    dot: false,
+    stagePadding: 18,
+
     nav: true,
     responsive: {
         0: {
@@ -38,7 +38,10 @@ $('.owl-carousel').owlCarousel({
         600: {
             items: 2
         },
-        1000: {
+        768: {
+            items: 3
+        },
+        1024: {
             items: 4
         }
     }
