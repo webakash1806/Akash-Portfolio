@@ -434,7 +434,6 @@ nav {
     background-color: var(--grey);
     box-shadow: 0px 0px 5px #44434373;
     transition: all 0.3s;
-    /* border: 1px solid black; */
     margin: 9px;
 }
 
