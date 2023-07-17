@@ -446,6 +446,7 @@ nav {
 
 .item img {
     border-radius: 5px;
+    box-shadow: 0px 5px 5px #000000cb;
 }
 
 .proj-btn {
@@ -502,7 +503,74 @@ nav {
     color: var(--primary);
     font-size: 14px;
     text-align: center;
+}
 
+footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #0d1111;
+    color: #fff;
+    padding: 5rem 3rem;
+}
+
+footer h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+footer a {
+    display: flex;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #aa36fd;
+}
+
+footer a,
+footer p {
+    line-height: 2rem;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #848484;
+}
+
+
+.footer-start {
+    max-width: 20rem;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25rem;
+}
+
+
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 20rem;
+}
+
+.newsletter input {
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #6b19ae;
+    color: #fff;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 425px) {
@@ -618,6 +686,27 @@ nav {
     .project {
         margin: 1rem;
     }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-start {
+        min-width: 16rem;
+        max-width: 25rem;
+    }
+
+    .mid {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 7rem;
+    }
+
+    .newsletter {
+        width: 18rem;
+    }
 }
 
 @media (min-width:426px) and (max-width: 767px) {
@@ -726,6 +815,12 @@ nav {
         margin: 2rem;
     }
 
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
 }
 
 
@@ -789,6 +884,12 @@ nav {
 
     .project {
         margin: 0.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
 }
