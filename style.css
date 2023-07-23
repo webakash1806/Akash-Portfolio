@@ -249,7 +249,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
     padding: 7rem 3rem 5rem 3rem;
     margin: 0rem 5rem 1rem 5rem;
 }
@@ -269,10 +269,44 @@ nav {
 
 .about-head-underline {
     margin-top: 5px;
-    height: 4px;
-    border-radius: 50%;
+    height: 3px;
+    border-radius: 8px;
     width: 13rem;
-    background-color: #000;
+    background-color: #F109E6;
+}
+
+.dot {
+    position: relative;
+    top: -11px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3.5px solid #F109E6;
+    background-color: #F109E6;
+    animation: dotMove 7s infinite ease-in-out;
+}
+
+@keyframes dotMove {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: -100px;
+    }
+
+    50% {
+        left: 0;
+    }
+
+    75% {
+        left: 100px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 .about-detail {
@@ -285,7 +319,7 @@ nav {
 
 .about img {
     margin-top: -5rem;
-    height: 25rem;
+    height: 22rem;
 }
 
 
