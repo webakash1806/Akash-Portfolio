@@ -201,6 +201,106 @@ nav {
     font-size: 60px;
 }
 
+.hero-right {
+    /* border: 2px solid black; */
+    padding: 5px;
+    position: relative;
+    height: 28rem;
+    width: 24rem;
+
+}
+
+.first-box {
+    position: absolute;
+    height: 25rem;
+    transform: rotateX(45deg);
+    width: 20rem;
+    background-color: #ff008cc8;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: firstBox 8s infinite;
+}
+
+@keyframes firstBox {
+    0% {
+        transform: rotateX(65deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotateX(65deg);
+    }
+}
+
+
+.sec-box {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: 0.5rem;
+    left: 1.5rem;
+    position: absolute;
+    transform: rotateX(15deg);
+    height: 25rem;
+    width: 19rem;
+    background-color: #c2db00da;
+    animation: secBox 5s infinite;
+}
+
+@keyframes secBox {
+    0% {
+        transform: rotateX(45deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotateX(45deg);
+    }
+}
+
+
+.third-box {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: 0.5rem;
+    left: 1.5rem;
+    position: absolute;
+    /* transform: rotateX(15deg); */
+    height: 24rem;
+    width: 18rem;
+    background-color: #8400ffc2;
+    animation: thirdBox 10s infinite;
+}
+
+@keyframes thirdBox {
+    0% {
+        transform: rotate(13deg)
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotateX(13deg);
+    }
+}
+
+
+
+.hero-right img {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    height: 22rem;
+    width: 18rem;
+    object-fit: cover;
+    z-index: 5;
+}
+
 .typewriter {
     font-size: 40px;
     font-weight: 700;
@@ -241,9 +341,7 @@ nav {
     right: 10px;
 }
 
-.hero-right img {
-    height: 22rem;
-}
+
 
 .about {
     display: flex;
@@ -698,7 +796,7 @@ footer p {
     }
 
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 2.5rem 0.3rem;
 
     }
@@ -709,9 +807,15 @@ footer p {
         font-weight: 600;
     }
 
+
     .hero-left>p,
     .about-detail p {
         font-size: 13px;
+    }
+
+    .hero-left {
+        /* border: 1px solid white; */
+        /* margin-top: 21rem; */
     }
 
     .hero-left h1 {
@@ -737,9 +841,34 @@ footer p {
         gap: 20px;
     }
 
+
+    .hero-right {
+        width: 18rem;
+        margin: 1rem 0;
+    }
+
     .hero img {
-        margin-top: 1rem;
-        height: 15rem;
+        top: 2rem;
+        height: 18rem;
+        width: 14rem;
+    }
+
+    .first-box {
+        top: 2rem;
+        height: 19rem;
+        width: 15rem;
+    }
+
+    .sec-box {
+        top: 2rem;
+        height: 19.5rem;
+        width: 15.5rem;
+    }
+
+    .third-box {
+        top: 2rem;
+        height: 19.5rem;
+        width: 16rem;
     }
 
     .about img {
@@ -838,9 +967,36 @@ footer p {
     }
 
     .hero {
-        flex-direction: column;
-        padding: 8rem 1rem;
+        flex-direction: column-reverse;
+        padding: 3.5rem 1rem 8rem 1rem;
+    }
 
+    .hero-right {
+        width: 18rem;
+    }
+
+    .hero img {
+        top: 2rem;
+        height: 18rem;
+        width: 14rem;
+    }
+
+    .first-box {
+        top: 2rem;
+        height: 19rem;
+        width: 15rem;
+    }
+
+    .sec-box {
+        top: 2rem;
+        height: 19.5rem;
+        width: 15.5rem;
+    }
+
+    .third-box {
+        top: 2rem;
+        height: 19.5rem;
+        width: 16rem;
     }
 
     .typewriter {
@@ -931,8 +1087,35 @@ footer p {
         margin: 0;
     }
 
+    .hero-right {
+        width: 30rem;
+        padding-right: 7.7rem;
+    }
 
-    .hero img,
+    .hero img {
+        top: 2rem;
+        height: 18rem;
+        width: 14rem;
+    }
+
+    .first-box {
+        top: 2rem;
+        height: 19rem;
+        width: 15rem;
+    }
+
+    .sec-box {
+        top: 2rem;
+        height: 19.5rem;
+        width: 14rem;
+    }
+
+    .third-box {
+        top: 2rem;
+        height: 19.5rem;
+        width: 15rem;
+    }
+
     .about img {
         height: 15rem;
     }
@@ -1003,8 +1186,10 @@ footer p {
         margin: 0;
     }
 
+    .hero-right {
+        padding-right: 10rem;
+    }
 
-    .hero img,
     .about img {
         height: 15rem;
     }
