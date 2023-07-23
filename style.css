@@ -268,10 +268,10 @@ nav {
 }
 
 .about-head-underline {
-    margin-top: 5px;
+    margin-top: 15px;
     height: 3px;
     border-radius: 8px;
-    width: 13rem;
+    width: 15rem;
     background-color: #F109E6;
 }
 
@@ -293,7 +293,7 @@ nav {
     }
 
     25% {
-        left: -100px;
+        left: -125px;
     }
 
     50% {
@@ -301,7 +301,7 @@ nav {
     }
 
     75% {
-        left: 100px;
+        left: 125px;
     }
 
     100% {
@@ -459,8 +459,13 @@ nav {
 
 .project {
     background: var(--secondary);
-    margin: 5rem;
+    margin: 0 5rem;
     box-shadow: none;
+    padding: 6rem 0;
+}
+
+.project-item {
+    margin-top: 2rem;
 }
 
 .item {
