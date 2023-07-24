@@ -202,7 +202,7 @@ nav {
 }
 
 .hero-right {
-    /* border: 2px solid black; */
+    top: 50px;
     padding: 5px;
     position: relative;
     height: 28rem;
@@ -267,7 +267,6 @@ nav {
     top: 0.5rem;
     left: 1.5rem;
     position: absolute;
-    /* transform: rotateX(15deg); */
     height: 24rem;
     width: 18rem;
     background-color: #8400ffc2;
@@ -290,15 +289,14 @@ nav {
 
 
 
-.hero-right img {
+.hero img {
     position: absolute;
     top: 1rem;
     left: 2rem;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 60% 50%;
     height: 22rem;
     width: 18rem;
     object-fit: cover;
-    z-index: 5;
 }
 
 .typewriter {
@@ -814,8 +812,7 @@ footer p {
     }
 
     .hero-left {
-        /* border: 1px solid white; */
-        /* margin-top: 21rem; */
+        margin-top: -55px;
     }
 
     .hero-left h1 {
@@ -844,7 +841,10 @@ footer p {
 
     .hero-right {
         width: 18rem;
-        margin: 1rem 0;
+        /* margin: 0.5rem 0; */
+        border: 2px solid white;
+        height: 20rem;
+        top: -20px;
     }
 
     .hero img {
@@ -971,7 +971,12 @@ footer p {
         padding: 3.5rem 1rem 8rem 1rem;
     }
 
+    .hero-left {
+        margin-top: -8rem;
+    }
+
     .hero-right {
+        top: -15px;
         width: 18rem;
     }
 
