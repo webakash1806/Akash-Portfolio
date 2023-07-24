@@ -842,7 +842,7 @@ footer p {
     .hero-right {
         width: 18rem;
         /* margin: 0.5rem 0; */
-        border: 2px solid white;
+        /* border: 2px solid white; */
         height: 20rem;
         top: -20px;
     }
