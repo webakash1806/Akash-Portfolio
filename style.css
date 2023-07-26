@@ -269,17 +269,18 @@ nav {
     position: absolute;
     height: 24rem;
     width: 18rem;
+    transform: rotate(13deg);
     background-color: #8400ffc2;
-    animation: thirdBox 10s infinite;
+    animation: thirdBox 7s infinite;
 }
 
 @keyframes thirdBox {
     0% {
-        transform: rotate(13deg)
+        transform: rotateX(13deg)
     }
 
     50% {
-        transform: rotate(30deg);
+        transform: rotate(25deg);
     }
 
     100% {
@@ -368,7 +369,7 @@ nav {
     height: 3px;
     border-radius: 8px;
     width: 15rem;
-    background-color: #F109E6;
+    background-color: var(--hover);
 }
 
 .dot {
@@ -378,8 +379,8 @@ nav {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 3.5px solid #F109E6;
-    background-color: #F109E6;
+    border: 3.5px solid var(--hover);
+    background-color: var(--hover);
     animation: dotMove 7s infinite ease-in-out;
 }
 
