@@ -410,7 +410,6 @@ nav {
     align-items: center;
     gap: 2rem;
     margin-top: 1rem;
-
 }
 
 .about img {
@@ -474,7 +473,6 @@ nav {
     color: #ed0f55;
 }
 
-/* hover effects */
 
 .social div:nth-child(1):hover a {
     background-color: #131a1a;
@@ -506,11 +504,9 @@ nav {
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    /* margin: 4rem; */
     padding: 6rem 4rem 2rem 4rem;
     background: linear-gradient(#c1f9ef1a, #19d76e19, #03aa4e36);
     box-shadow: 0px 10px 15px #03aa4e36;
-    /* border: 1px solid black; */
 }
 
 .skills-detail {
@@ -712,13 +708,6 @@ footer p {
     max-width: 20rem;
 }
 
-/* 
-.mid {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 25rem;
-} */
 
 
 
@@ -843,8 +832,6 @@ footer p {
 
     .hero-right {
         width: 18rem;
-        /* margin: 0.5rem 0; */
-        /* border: 2px solid white; */
         height: 20rem;
         top: -20px;
     }
