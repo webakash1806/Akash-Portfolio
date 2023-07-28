@@ -621,6 +621,53 @@ nav {
     text-align: center;
 }
 
+.contact {
+    position: relative;
+    height: 10rem;
+}
+
+.custom-shape-divider-top-1690556336 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1690556336 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1690556336 .shape-fill {
+    fill: #ff0000;
+}
+
+.custom-shape-divider-bottom-1690556257 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1690556257 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1690556257 .shape-fill {
+    fill: #00407c;
+}
+
+
 /** footer section Style **/
 
 footer {
