@@ -330,6 +330,7 @@ nav {
 /** about section Style **/
 
 .about {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -622,12 +623,14 @@ nav {
 }
 
 .contact {
+    background: linear-gradient(to right, #843CBF, #FC28E5);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 8rem 0;
+    backdrop-filter: blur(10px);
     /* height: 10rem; */
 }
 
@@ -648,7 +651,7 @@ nav {
 }
 
 .custom-shape-divider-top-1690556336 .shape-fill {
-    fill: #ff0000;
+    fill: var(--secondary);
 }
 
 .custom-shape-divider-bottom-1690556257 {
@@ -669,7 +672,7 @@ nav {
 }
 
 .custom-shape-divider-bottom-1690556257 .shape-fill {
-    fill: #00407c;
+    fill: var(--secondary);
 }
 
 .contact-head>p {
@@ -677,6 +680,8 @@ nav {
     letter-spacing: 0.2px;
     font-size: 2.5rem;
 }
+
+.contact-main {}
 
 
 /** footer section Style **/
