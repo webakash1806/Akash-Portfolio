@@ -708,23 +708,28 @@ nav {
 
 .btn-section button {
     position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 500;
     border: none;
     border-radius: 5px;
     width: 18.7rem;
-    padding: 8px;
+    padding: 8px 20px 8px 8px;
     cursor: pointer;
 }
 
 .btn-section button i {
     position: absolute;
-    top: 12px;
+    top: 13px;
     right: 110px;
+    font-size: 16px;
     transition: all 0.5s;
-
 }
 
 .btn-section button:hover i {
-    right: 20px;
+    transform: rotate(40deg);
+    right: 10px;
 }
 
 
